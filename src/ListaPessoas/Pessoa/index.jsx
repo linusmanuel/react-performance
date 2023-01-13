@@ -1,7 +1,9 @@
-const Pessoa = (name) => {
+import memo from 'react'
+
+const Pessoa = ({name}) => {
   return (
     <li>{name}</li>
   )
 }
 
-export default Pessoa
+export default memo(Pessoa)

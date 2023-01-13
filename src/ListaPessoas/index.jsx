@@ -1,9 +1,15 @@
+import { useState } from "react"
 import Pessoa from "./Pessoa"
 
 const ListaPessoas = () => {
+  const [pessoas, setPessoas] = useState(['Maria', 'João'])
   return (
     <ul>
-      <Pessoa />
+      {
+        pessoas.map((pessoa) => (
+          <Pessoa name={pessoa}/>
+        ))
+      }
     </ul>
   )
 }

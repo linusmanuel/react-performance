@@ -1,5 +1,11 @@
+import ListaPessoas from './ListaPessoas';
+
 function App() {
-	return <div></div>;
+	return (
+		<div>
+			<ListaPessoas />
+		</div>
+	);
 }
 
 export default App;
